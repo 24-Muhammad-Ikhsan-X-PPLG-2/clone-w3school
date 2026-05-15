@@ -30,6 +30,7 @@ body {
   justify-content: start;
   align-items: center;
   background-color: var(--color-gray);
+  overflow-x: hidden;
   white-space: nowrap;
 }
 
@@ -328,15 +329,20 @@ a {
 .footer .footer-title img {
   width: 48px;
   height: auto;
+  cursor: pointer;
+}
+
+.footer .footer-title img:hover {
+  fill: #ffe783;
 }
 
 .footer .footer-tags {
   margin-top: 2.5rem;
   display: flex;
   align-items: center;
-  width: fit-content;
+  width: 70%;
   margin-inline: auto;
-  gap: 5rem;
+  justify-content: space-evenly;
 }
 
 .footer .footer-tag {
